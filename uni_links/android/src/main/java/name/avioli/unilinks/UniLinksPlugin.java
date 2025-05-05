@@ -14,12 +14,13 @@ import io.flutter.plugin.common.EventChannel;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.PluginRegistry;
+
 public class UniLinksPlugin
         implements FlutterPlugin,
-                MethodChannel.MethodCallHandler,
-                EventChannel.StreamHandler,
-                ActivityAware,
-                PluginRegistry.NewIntentListener {
+        MethodChannel.MethodCallHandler,
+        EventChannel.StreamHandler,
+        ActivityAware,
+        PluginRegistry.NewIntentListener {
 
     private static final String MESSAGES_CHANNEL = "uni_links/messages";
     private static final String EVENTS_CHANNEL = "uni_links/events";
@@ -80,7 +81,8 @@ public class UniLinksPlugin
     }
 
     @Override
-    public void onDetachedFromEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {}
+    public void onDetachedFromEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
+    }
 
     @Override
     public void onListen(Object o, EventChannel.EventSink eventSink) {
@@ -116,7 +118,8 @@ public class UniLinksPlugin
     }
 
     @Override
-    public void onDetachedFromActivityForConfigChanges() {}
+    public void onDetachedFromActivityForConfigChanges() {
+    }
 
     @Override
     public void onReattachedToActivityForConfigChanges(
@@ -126,5 +129,6 @@ public class UniLinksPlugin
     }
 
     @Override
-    public void onDetachedFromActivity() {}
+    public void onDetachedFromActivity() {
+    }
 }
